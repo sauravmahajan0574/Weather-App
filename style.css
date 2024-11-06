@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e7e7e7;
+}
+
+.container {
+  max-width: fit-content;
+  /* width: 50vw; */
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(251, 242, 133);
+  background: radial-gradient(
+    circle,
+    rgba(251, 242, 133, 0.6334908963585435) 0%,
+    rgba(224, 196, 91, 0.8407738095238095) 35%,
+    rgba(230, 224, 113, 1) 100%
+  );
+}
+
+.container input[type="text"] {
+  width: 60%;
+  height: 50px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #bfbfbf;
+}
+
+.container input[type="Submit"] {
+  width: 30%;
+  height: 50px;
+  border-radius: 7px;
+  outline: none;
+  border: 2px solid #000;
+  text-align: center;
+  background-color: #bfbfbf;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.container input[type="Submit"]:hover {
+  border: none;
+}
+
+.display {
+  width: 20vw;
+  height: 25vh;
+  margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display #city {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.display #date {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.display #temp {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.display #weather {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    height: 67vh;
+  }
+
+  .input {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .container input[type="text"] {
+    margin-bottom: 0.5rem;
+  }
+
+  .container input[type="submit"] {
+    margin-bottom: 0.5rem;
+    margin-left: 15px;
+  }
+
+  .display {
+    height: 55vh;
+  }
+}
